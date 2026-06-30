@@ -74,6 +74,178 @@
 
             label = "MACRO_CTRL_A";
         };
+
+        macro_ctrl_s: macro_ctrl_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp S>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_S";
+        };
+
+        macro_ctrl_d: macro_ctrl_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp D>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_D";
+        };
+
+        macro_ctrl_w: macro_ctrl_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp W>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_W";
+        };
+
+        macro_ctrl_f: macro_ctrl_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp F>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_F";
+        };
+
+        macro_ctrl_z: macro_ctrl_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp Z>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_Z";
+        };
+
+        macro_ctrl_x: macro_ctrl_x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp X>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_X";
+        };
+
+        macro_ctrl_c: macro_ctrl_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_C";
+        };
+
+        macro_ctrl_v: macro_ctrl_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_V";
+        };
+
+        macro_ctrl_r: macro_ctrl_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp R>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_R";
+        };
+
+        macro_ctrl_l: macro_ctrl_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp L>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_L";
+        };
+
+        macro_ctrl_tab: macro_ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp TAB>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_TAB";
+        };
+
+        macro_ctrl_shift_tab: macro_ctrl_shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp TAB>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_SHIFT_TAB";
+        };
+
+        macro_switch_lang: macro_switch_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN &kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
+            label = "MACRO_SWITCH_LANG";
+        };
+
+        macro_ctrl_p: macro_ctrl_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp P>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_P";
+        };
     };
 
     behaviors {
