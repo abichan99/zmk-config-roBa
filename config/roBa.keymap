@@ -311,7 +311,7 @@
             label = "CTRL_SHIFT_E";
         };
 
-        macro_ctrl_f: macro_ctrl_f {
+        ctrl_shift_f: ctrl_shift_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -324,7 +324,7 @@
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_F";
+            label = "CTRL_SHIFT_F";
         };
 
         ctrl_shift_g_g: ctrl_shift_g_g {
@@ -391,7 +391,7 @@
         default_layer {
             bindings = <
 &kp ESCAPE     &macro_ctrl_w  &kp E          &macro_ctrl_r                &kp TAB                                                        &kp F15          &kp F15                &lt 5 I          &kp O          &macro_ctrl_p
-&macro_ctrl_a  &macro_ctrl_s  &macro_ctrl_d  &macro_ctrl_f                &kp G        &kp LS(LG(S))                      &kp GRAVE      &kp H            &macro_ctrl_shift_tab  &macro_ctrl_tab  &macro_ctrl_l  &kp ENTER
+&macro_ctrl_a  &macro_ctrl_s  &macro_ctrl_d  &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE      &kp H            &macro_ctrl_shift_tab  &macro_ctrl_tab  &macro_ctrl_l  &kp ENTER
 &macro_ctrl_z  &macro_ctrl_x  &macro_ctrl_c  &macro_ctrl_v                &kp B        &macro_switch_lang                 &kp GRAVE      &kp N            &kp M                  &kp COMMA        &kp DOT        &kp SLASH
 &kp LCTRL      &kp LEFT_WIN   &kp LEFT_ALT   &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 BACKSPACE                                                         &kp DEL
             >;
