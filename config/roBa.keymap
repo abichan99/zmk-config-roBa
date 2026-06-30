@@ -246,6 +246,132 @@
 
             label = "MACRO_CTRL_P";
         };
+
+        macro_ctrl_o: macro_ctrl_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp O>,
+                <&macro_press>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_O";
+        };
+
+        macro_k_o: macro_k_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp K &kp O>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_K_O";
+        };
+
+        macro_ctrl_shift_n: macro_ctrl_shift_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp N>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_SHIFT_N";
+        };
+
+        macro_alt_f4: macro_alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp F4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MACRO_ALT_F4";
+        };
+
+        ctrl_shift_e: ctrl_shift_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp E>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_SHIFT_E";
+        };
+
+        macro_ctrl_f: macro_ctrl_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp F>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MACRO_CTRL_F";
+        };
+
+        ctrl_shift_g_g: ctrl_shift_g_g {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp G>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LCTRL &kp G>;
+
+            label = "CTRL_SHIFT_G_G";
+        };
+
+        ctrl_shift_i: ctrl_shift_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp I>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_SHIFT_I";
+        };
+
+        ctrl_alt_b: ctrl_alt_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_press>,
+                <&macro_press>,
+                <&macro_press>,
+                <&macro_press>,
+                <&kp &kp &kp &kp>;
+
+            label = "CTRL_ALT_B";
+        };
     };
 
     behaviors {
