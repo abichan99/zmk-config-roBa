@@ -433,7 +433,7 @@
         default_layer {
             bindings = <
 &kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &kp TAB                                                          &none          &kp F15          &kp UP_ARROW    &ctrl_o          &ctrl_p
-&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE        &kp H          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE        &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp B        &win_space                         &kp GRAVE        &ctrl_n        &ctrl_shift_tab  &ctrl_tab       &none            &none
 &kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp BACKSPACE                                                    &none
             >;
