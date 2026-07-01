@@ -278,48 +278,55 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp O>,
-                <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_tap>;
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_press>,
+                <&kp LCTRL>;
 
             label = "CTRL_O";
         };
 
-        macro_k_o: macro_k_o {
+        ctrl_k_o: ctrl_k_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp K &kp O>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp K &kp O>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_K_O";
+            label = "CTRL_K_O";
         };
 
-        macro_ctrl_shift_n: macro_ctrl_shift_n {
+        ctrl_shift_n: ctrl_shift_n {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp N>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp N>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_SHIFT &kp LCTRL>;
 
-            label = "MACRO_CTRL_SHIFT_N";
+            label = "CTRL_SHIFT_N";
         };
 
-        macro_alt_f4: macro_alt_f4 {
+        alt_f4: alt_f4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_ALT &kp F4>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F4>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "MACRO_ALT_F4";
+            label = "ALT_F4";
         };
 
         ctrl_shift_e: ctrl_shift_e {
@@ -327,13 +334,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT &kp E>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp E>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_SHIFT &kp LCTRL>;
 
             label = "CTRL_SHIFT_E";
         };
@@ -343,13 +348,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT &kp F>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp F>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_SHIFT &kp LCTRL>;
 
             label = "CTRL_SHIFT_F";
         };
@@ -359,13 +362,13 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT &kp G>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp G>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LCTRL &kp G>;
+                <&kp LEFT_SHIFT &kp LCTRL>,
+                <&macro_tap>,
+                <&kp G>;
 
             label = "CTRL_SHIFT_G_G";
         };
@@ -375,13 +378,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_press>,
-                <&kp LEFT_SHIFT &kp I>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp I>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LEFT_SHIFT &kp LCTRL>;
 
             label = "CTRL_SHIFT_I";
         };
@@ -390,12 +391,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&none>,
                 <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT>,
                 <&macro_press>,
-                <&macro_press>,
-                <&macro_press>,
-                <&kp &kp &kp &kp>;
+                <&kp B>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp LCTRL>;
 
             label = "CTRL_ALT_B";
         };
