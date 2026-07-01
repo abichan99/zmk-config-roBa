@@ -446,10 +446,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                          &kp F15        &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
-&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp B        &win_space                         &kp GRAVE        &ctrl_n        &ctrl_shift_tab  &ctrl_tab       &none            &none
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp BACKSPACE                                                    &none
+&kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                          &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
+&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp B        &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &none            &none
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp BACKSPACE                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -495,10 +495,10 @@
 
         SCROLL {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                               &kp Y          &kp U  &kp I      &kp O       &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans          &kp H          &kp J  &kp K      &kp L       &kp ENTER
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans          &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp QUESTION
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT_SHIFT  &kp BACKSPACE                                &trans
+&kp Q      &kp W   &kp E   &kp R   &kp T                               &kp Y          &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S   &kp D   &kp F   &kp G   &trans      &trans          &kp H          &kp J  &kp K      &kp L       &kp ENTER
+&kp Z      &kp X   &kp C   &kp V   &kp B   &trans      &trans          &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp QUESTION
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans      &kp LEFT_SHIFT  &kp BACKSPACE                                &trans
             >;
         };
 
@@ -506,7 +506,7 @@
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4   &kp F5                          &kp KP_N7  &kp KP_N7  &kp KP_N8  &kp KP_N9  &bt BT_CLR
 &kp F6        &kp F7        &kp F8        &kp F9   &kp F10  &trans      &trans     &kp KP_N4  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
-&kp F11       &kp F12       &kp F13       &kp F14  &kp F15  &trans      &kp KP_N0  &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PERIOD
+&kp F11       &kp F12       &kp F13       &kp F14  &kp F15  &trans      &kp KP_N0  &kp KP_N0  &kp N1     &kp KP_N2  &kp KP_N3  &kp PERIOD
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans   &trans   &trans      &trans     &trans                                      &bt BT_SEL 4
             >;
         };
