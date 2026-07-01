@@ -239,7 +239,7 @@
                 <&kp LCTRL &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp TAB>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_SHIFT &kp LCTRL>;
 
             label = "CTRL_SHIFT_TAB";
@@ -281,7 +281,7 @@
                 <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp O>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LCTRL>;
 
             label = "CTRL_O";
