@@ -63,100 +63,115 @@
             label = "TO_LAYER_0";
         };
 
-        macro_ctrl_a: macro_ctrl_a {
+        ctrl_a: ctrl_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp A>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp A>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_A";
+            label = "CTRL_A";
         };
 
-        macro_ctrl_s: macro_ctrl_s {
+        ctrl_s: ctrl_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp S>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp S>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_S";
+            label = "CTRL_S";
         };
 
-        macro_ctrl_d: macro_ctrl_d {
+        ctrl_d: ctrl_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp D>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp D>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_D";
+            label = "CTRL_D";
         };
 
-        macro_ctrl_w: macro_ctrl_w {
+        ctrl_w: ctrl_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp W>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_W";
+            label = "CTRL_W";
         };
 
-        macro_ctrl_f: macro_ctrl_f {
+        ctrl_f: ctrl_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp F>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp F>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_F";
+            label = "CTRL_F";
         };
 
-        macro_ctrl_z: macro_ctrl_z {
+        ctrl_z: ctrl_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp Z>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp Z>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_Z";
+            label = "CTRL_Z";
         };
 
-        macro_ctrl_x: macro_ctrl_x {
+        ctrl_x: ctrl_x {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp X>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
-            label = "MACRO_CTRL_X";
+            label = "CTRL_X";
         };
 
-        macro_ctrl_c: macro_ctrl_c {
+        ctrl_c: ctrl_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp C>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LCTRL>,
+                <&macro_tap>;
 
-            label = "MACRO_CTRL_C";
+            label = "CTRL_C";
         };
 
         macro_ctrl_v: macro_ctrl_v {
@@ -390,10 +405,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE     &macro_ctrl_w  &kp E          &macro_ctrl_r                &kp TAB                                                        &kp F15          &kp F15                &lt 5 I          &kp O          &macro_ctrl_p
-&macro_ctrl_a  &macro_ctrl_s  &macro_ctrl_d  &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE      &kp H            &macro_ctrl_shift_tab  &macro_ctrl_tab  &macro_ctrl_l  &kp ENTER
-&macro_ctrl_z  &macro_ctrl_x  &macro_ctrl_c  &macro_ctrl_v                &kp B        &macro_switch_lang                 &kp GRAVE      &kp N            &kp M                  &kp COMMA        &kp DOT        &kp SLASH
-&kp LCTRL      &kp LEFT_WIN   &kp LEFT_ALT   &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 BACKSPACE                                                         &kp DEL
+&kp ESCAPE  &ctrl_w       &kp E         &macro_ctrl_r                &kp TAB                                                        &kp F15          &kp F15                &lt 5 I          &kp O          &macro_ctrl_p
+&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE      &kp H            &macro_ctrl_shift_tab  &macro_ctrl_tab  &macro_ctrl_l  &kp ENTER
+&ctrl_z     &ctrl_x       &ctrl_c       &macro_ctrl_v                &kp B        &macro_switch_lang                 &kp GRAVE      &kp N            &kp M                  &kp COMMA        &kp DOT        &kp SLASH
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 BACKSPACE                                                         &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
