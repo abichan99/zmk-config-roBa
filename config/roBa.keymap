@@ -433,7 +433,7 @@
         default_layer {
             bindings = <
 &kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &kp TAB                                                          &none          &kp F15          &kp UP_ARROW    &ctrl_o          &ctrl_p
-&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_shift_f                &kp G        &kp LS(LG(S))                      &kp GRAVE        &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp B        &win_space                         &kp GRAVE        &ctrl_n        &ctrl_shift_tab  &ctrl_tab       &none            &none
 &kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp BACKSPACE                                                    &none
             >;
@@ -464,7 +464,7 @@
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                      &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE     &kp AT
 &kp ASTERISK     &kp MINUS          &kp PLUS   &kp EQUAL   &kp END      &trans      &trans  &kp SEMICOLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &none
 &kp LESS_THAN    &kp GREATER_THAN   &kp TILDE  &kp CARET   &trans       &trans      &trans  &kp COLON         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACKET  &kp SLASH
-&trans           &trans             &trans     &trans      &trans       &trans      &trans  &trans                                                                            &trans
+&trans           &trans             &trans     &trans      &trans       &trans      &trans  &kp BACKSPACE                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -481,10 +481,10 @@
 
         SCROLL {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                       &kp Y           &kp U  &kp I      &kp O       &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans  &kp H           &kp J  &kp K      &kp L       &trans
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans  &kp N           &kp M  &kp COMMA  &kp PERIOD  &kp QUESTION
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_SHIFT                                &trans
+&kp Q   &kp W   &kp E   &kp R   &kp T                               &kp Y          &kp U  &kp I      &kp O       &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &trans      &trans          &kp H          &kp J  &kp K      &kp L       &kp ENTER
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans      &trans          &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp QUESTION
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT_SHIFT  &kp BACKSPACE                                &trans
             >;
         };
 
