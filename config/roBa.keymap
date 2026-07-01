@@ -400,6 +400,20 @@
 
             label = "CTRL_ALT_B";
         };
+
+        ctrl_n: ctrl_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp N>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_N";
+        };
     };
 
     behaviors {
