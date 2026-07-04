@@ -538,8 +538,8 @@
             bindings = <
 &kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                          &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
 &ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &none            &none
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp SPACE                                                          &none
+&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l          &none
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &lt 2 SPACE                                                        &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -556,7 +556,7 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp MINUS                   &alt_f4          &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
