@@ -448,6 +448,87 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        comma_2: comma_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_2";
+            bindings = <&kp COMMA>, <&kp NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        period_3: period_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_3";
+            bindings = <&kp PERIOD>, <&kp NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        j_4: j_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "J_4";
+            bindings = <&kp J>, <&kp NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        k_5: k_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "K_5";
+            bindings = <&kp K>, <&kp NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        l_6: l_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "L_6";
+            bindings = <&kp L>, <&kp NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        u_7: u_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_7";
+            bindings = <&kp U>, <&kp NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        i_8: i_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_8";
+            bindings = <&kp I>, <&kp NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        o_9: o_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_9";
+            bindings = <&kp O>, <&kp NUMBER_9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        question_dot: question_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_DOT";
+            bindings = <&kp QUESTION>, <&kp DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -457,8 +538,8 @@
             bindings = <
 &kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                          &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
 &ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp B        &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &none            &none
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp BACKSPACE                                                      &none
+&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &none            &none
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &kp SPACE                                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -504,10 +585,10 @@
 
         SCROLL {
             bindings = <
-&kp Q      &kp W   &kp E   &kp R   &kp T                                  &kp Y      &kp U  &kp I      &kp O       &kp P
-&kp A      &kp S   &kp D   &kp F   &kp G   &trans          &kp LANG1      &kp H      &kp J  &kp K      &kp L       &kp ENTER
-&kp Z      &kp X   &kp C   &kp V   &kp B   &win_space      &kp GRAVE      &kp N      &m_1   &kp COMMA  &kp PERIOD  &kp QUESTION
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                                &trans
+&kp Q      &kp W   &kp E   &kp R   &kp T                                  &kp Y      &u_7  &i_8      &o_9       &kp P
+&kp A      &kp S   &kp D   &kp F   &kp G   &trans          &kp LANG1      &kp H      &j_4  &k_5      &l_6       &kp ENTER
+&kp Z      &kp X   &kp C   &kp V   &kp B   &win_space      &kp GRAVE      &kp N      &m_1  &comma_2  &period_3  &question_dot
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                             &trans
             >;
         };
 
