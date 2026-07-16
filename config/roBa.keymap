@@ -545,10 +545,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                          &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
-&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE        &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE        &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l          &none
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 1 BACKSPACE  &lt 2 SPACE                                                        &none
+&kp ESCAPE  &ctrl_w       &none         &ctrl_r                      &ctrl_t                                                        &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &ctrl_p
+&ctrl_a     &ctrl_s       &ctrl_d       &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp GRAVE      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&ctrl_z     &ctrl_x       &ctrl_c       &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE      &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l          &none
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                        &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -597,7 +597,7 @@
 &kp Q      &kp W   &kp E   &kp R   &kp T                                  &kp Y      &u_7  &i_8      &o_9       &kp P
 &kp A      &kp S   &kp D   &kp F   &kp G   &trans          &kp LANG1      &kp H      &j_4  &k_5      &l_6       &kp ENTER
 &kp Z      &kp X   &kp C   &kp V   &kp B   &win_space      &kp GRAVE      &n_0       &m_1  &comma_2  &period_3  &question_dot
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                             &trans
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                             &kp LSHIFT
             >;
         };
 
