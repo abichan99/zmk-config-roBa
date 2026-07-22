@@ -538,6 +538,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        y_minus: y_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Y_MINUS";
+            bindings = <&kp Y>, <&kp MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -594,7 +603,7 @@
 
         SCROLL {
             bindings = <
-&kp Q      &kp W   &kp E   &kp R   &kp T                                  &kp Y      &u_7  &i_8      &o_9       &kp P
+&kp Q      &kp W   &kp E   &kp R   &kp T                                  &y_minus   &u_7  &i_8      &o_9       &kp P
 &kp A      &kp S   &kp D   &kp F   &kp G   &trans          &kp LANG1      &kp H      &j_4  &k_5      &l_6       &kp ENTER
 &kp Z      &kp X   &kp C   &kp V   &kp B   &win_space      &kp GRAVE      &n_0       &m_1  &comma_2  &period_3  &question_dot
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                             &kp LSHIFT
