@@ -583,10 +583,10 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                      &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE     &kp AT
-&kp ASTERISK     &kp MINUS          &kp PLUS   &kp EQUAL   &kp END      &trans      &trans  &kp SEMICOLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &none
-&kp LESS_THAN    &kp GREATER_THAN   &kp TILDE  &kp CARET   &trans       &trans      &trans  &kp COLON         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACKET  &kp SLASH
-&trans           &trans             &trans     &trans      &trans       &trans      &trans  &kp BACKSPACE                                                                     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                      &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &kp PLUS
+&kp ASTERISK     &kp AT_SIGN        &kp PLUS   &kp EQUAL   &kp END      &trans      &trans  &kp SEMICOLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &none
+&kp LESS_THAN    &kp GREATER_THAN   &kp TILDE  &kp CARET   &trans       &trans      &trans  &kp COLON         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER  &kp SLASH
+&trans           &trans             &trans     &trans      &trans       &trans      &trans  &kp BACKSPACE                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
