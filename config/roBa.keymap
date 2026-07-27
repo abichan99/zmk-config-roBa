@@ -562,7 +562,7 @@
 &kp LEFT_ALT  &kp LEFT_WIN  &kp TAB  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                        &none
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         FUNCTION {
