@@ -48,7 +48,7 @@
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            key-positions = <20 21 38>;
         };
 
         eq {
@@ -549,6 +549,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        backspace: backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE";
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -614,10 +623,10 @@
 
         SCROLL {
             bindings = <
-&kp Q      &kp W   &kp E         &kp R   &kp T                                  &y_minus   &u_7  &i_8      &o_9       &kp P
-&kp A      &kp S   &kp D         &kp F   &kp G   &trans          &kp LANG1      &kp H      &j_4  &k_5      &l_6       &kp ENTER
-&kp Z      &kp X   &kp C         &kp V   &kp B   &win_space      &kp GRAVE      &n_0       &m_1  &comma_2  &period_3  &question_dot
-&kp LCTRL  &trans  &kp CAPSLOCK  &trans  &trans  &trans          &kp BACKSPACE  &kp SPACE                             &kp LSHIFT
+&kp Q       &kp W      &kp E         &kp R   &kp T                               &y_minus   &u_7  &i_8      &o_9       &kp P
+&kp A       &kp S      &kp D         &kp F   &kp G   &trans          &kp LANG1   &kp H      &j_4  &k_5      &l_6       &kp ENTER
+&kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &n_0       &m_1  &comma_2  &period_3  &question_dot
+&kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                             &kp LSHIFT
             >;
         };
     };
