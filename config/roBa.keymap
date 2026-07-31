@@ -33,12 +33,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
         muhennkann {
@@ -54,6 +54,16 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        alt_larrow {
+            bindings = <&alt_larrow>;
+            key-positions = <19 18>;
+        };
+
+        alt_rarrow {
+            bindings = <&alt_larrow>;
+            key-positions = <19 20>;
         };
     };
 
@@ -429,6 +439,34 @@
                 <&kp LCTRL>;
 
             label = "CTRL_T";
+        };
+
+        alt_larrow: alt_larrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALT_LARROW";
+        };
+
+        alt_rarrow: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "NEW_MACRO";
         };
     };
 
