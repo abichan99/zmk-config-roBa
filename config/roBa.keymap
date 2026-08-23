@@ -39,29 +39,9 @@
             key-positions = <12 11>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21 38>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
-        alt_larrow {
-            bindings = <&alt_larrow>;
-            key-positions = <19 18>;
-        };
-
-        alt_rarrow {
-            bindings = <&alt_larrow>;
-            key-positions = <19 20>;
+        ctrl_shift_t {
+            bindings = <&none>;
+            key-positions = <3 4>;
         };
     };
 
@@ -465,6 +445,24 @@
                 <&kp LEFT_ALT>;
 
             label = "NEW_MACRO";
+        };
+
+        ctrl_shift_t: ctrl_shift_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_SHIFT_T";
         };
     };
 
