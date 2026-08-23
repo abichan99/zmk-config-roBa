@@ -38,11 +38,6 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 11>;
         };
-
-        ctrl_shift_t {
-            bindings = <&none>;
-            key-positions = <3 4>;
-        };
     };
 
     macros {
@@ -592,6 +587,20 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        new_or_prev_tab: new_or_prev_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_OR_PREV_TAB";
+            #binding-cells = <0>;
+            bindings = <&ctrl_t>, <&ctrl_shift_t>;
+        };
+
+        open_folder_or_file: open_folder_or_file {
+            compatible = "zmk,behavior-tap-dance";
+            label = "OPEN_FOLDER_OR_FILE";
+            #binding-cells = <0>;
+            bindings = <&ctrl_k_o>, <&ctrl_o>;
+        };
     };
 
     keymap {
@@ -599,10 +608,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &ctrl_t                                                        &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &ctrl_o          &none
-&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G        &kp LS(LG(S))                      &kp LANG1      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL    &win_space                         &kp GRAVE      &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l          &none
-&kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                        &none
+&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &open_folder_or_file  &none
+&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp ENTER
+&ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL         &win_space                         &kp GRAVE      &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l               &none
+&kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
