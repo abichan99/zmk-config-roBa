@@ -459,6 +459,20 @@
 
             label = "CTRL_SHIFT_T";
         };
+
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
+            label = "DOUBLE_QUOTE";
+        };
     };
 
     behaviors {
