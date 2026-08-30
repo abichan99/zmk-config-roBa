@@ -473,6 +473,48 @@
 
             label = "DOUBLE_QUOTE";
         };
+
+        parenthasis: parenthases {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_PARENTHESIS>,
+                <&macro_tap>,
+                <&kp RIGHT_PARENTHESIS>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
+            label = "PARENTHASES";
+        };
+
+        brace: brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_BRACE>,
+                <&macro_tap>,
+                <&kp RIGHT_BRACE>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
+            label = "BRACE";
+        };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_BRACKET>,
+                <&macro_tap>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
+            label = "BRACKET";
+        };
     };
 
     behaviors {
@@ -651,10 +693,10 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &double_quote     &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &kp PLUS
-&kp ASTERISK     &kp AT_SIGN       &kp PLUS   &kp EQUAL   &kp AMPERSAND  &trans      &trans  &kp SEMICOLON     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &none
-&kp LESS_THAN    &kp GREATER_THAN  &kp TILDE  &kp CARET   &kp PIPE       &trans      &trans  &kp COLON         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER  &kp SLASH
-&trans           &trans            &trans     &trans      &trans         &trans      &trans  &kp BACKSPACE                                                             &trans
+&kp EXCLAMATION  &double_quote     &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp SINGLE_QUOTE  &brace        &kp RIGHT_BRACE        &kp MINUS  &kp PLUS
+&kp ASTERISK     &kp AT_SIGN       &kp PLUS   &kp EQUAL   &kp AMPERSAND  &trans      &trans  &kp SEMICOLON     &parenthasis  &kp RIGHT_PARENTHESIS  &kp EQUAL  &none
+&kp LESS_THAN    &kp GREATER_THAN  &kp TILDE  &kp CARET   &kp PIPE       &trans      &trans  &kp COLON         &bracket      &kp RIGHT_BRACKET      &kp UNDER  &kp SLASH
+&trans           &trans            &trans     &trans      &trans         &trans      &trans  &kp BACKSPACE                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
