@@ -515,6 +515,34 @@
 
             label = "BRACKET";
         };
+
+        win_l: win_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
+            label = "WIN_R";
+        };
+
+        ctrl_shift_p: ctrl_shift_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp P>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LCTRL>;
+
+            label = "CTRL_SHIFT_P";
+        };
     };
 
     behaviors {
@@ -657,6 +685,22 @@
             #binding-cells = <0>;
             bindings = <&ctrl_k_o>, <&ctrl_o>;
         };
+
+        rarrow_win_l: rarrow_win_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RARROW_WIN_L";
+            bindings = <&kp RIGHT_ARROW>, <&win_l>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        command_palette: command_palette {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMMAND_PALETTE";
+            #binding-cells = <0>;
+            bindings = <&ctrl_p>, <&ctrl_shift_p>;
+        };
     };
 
     keymap {
@@ -664,7 +708,7 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &open_folder_or_file  &none
+&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &open_folder_or_file  &command_palette
 &ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp ENTER
 &ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL         &win_space                         &kp GRAVE      &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l               &kp LEFT_ALT
 &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                             &none
@@ -724,8 +768,8 @@
             bindings = <
 &kp Q       &kp W      &kp E         &kp R   &kp T                               &y_minus   &u_7  &i_8      &o_9       &kp P
 &kp A       &kp S      &kp D         &kp F   &kp G   &trans          &kp LANG1   &kp H      &j_4  &k_5      &l_6       &kp ENTER
-&kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &n_0       &m_1  &comma_2  &period_3  &question_dot
-&kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                             &kp LSHIFT
+&kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &n_0       &m_1  &comma_2  &period_3  &kp SLASH
+&kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                             &kp QUESTION
             >;
         };
     };
