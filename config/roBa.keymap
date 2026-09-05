@@ -706,7 +706,7 @@
             bindings = <&kp RIGHT_ARROW>, <&win_l>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         command_palette: command_palette {
@@ -723,7 +723,7 @@
         default_layer {
             bindings = <
 &kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &kp PRINTSCREEN  &kp TAB          &kp UP_ARROW    &open_folder_or_file  &command_palette
-&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp ENTER
+&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none            &kp LEFT_ARROW   &kp DOWN_ARROW  &rarrow_win_l         &kp ENTER
 &ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL         &win_space                         &kp GRAVE      &ctrl_n          &ctrl_shift_tab  &ctrl_tab       &ctrl_l               &ctrl_slash
 &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                             &none
             >;
