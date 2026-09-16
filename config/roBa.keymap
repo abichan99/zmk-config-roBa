@@ -202,28 +202,28 @@
             label = "CTRL_L";
         };
 
-        ctrl_tab: ctrl_tab {
+        ctrl_pgup: ctrl_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp TAB>,
+                <&kp PAGE_UP>,
                 <&macro_release>,
                 <&kp LCTRL>;
 
             label = "CTRL_TAB";
         };
 
-        ctrl_shift_tab: ctrl_shift_tab {
+        ctrl_shift_pgdn: ctrl_shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp TAB>,
+                <&kp PAGE_DOWN>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp LCTRL>;
 
@@ -799,10 +799,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &ctrl_y      &ctrl_u          &up        &open_folder_or_file  &command_palette
-&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none        &kp LEFT_ARROW   &down      &kp RIGHT_ARROW       &kp ENTER
-&ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL         &win_space                         &kp GRAVE      &ctrl_n      &ctrl_shift_tab  &ctrl_tab  &ctrl_l               &ctrl_slash
-&kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                    &none
+&kp ESCAPE    &ctrl_w       &none      &ctrl_r                      &new_or_prev_tab                                                    &ctrl_y      &ctrl_u           &up         &open_folder_or_file  &command_palette
+&ctrl_a       &ctrl_s       &ctrl_d    &ctrl_f                      &kp G             &kp LS(LG(S))                      &kp LANG1      &none        &kp LEFT_ARROW    &down       &kp RIGHT_ARROW       &kp ENTER
+&ctrl_z       &ctrl_x       &ctrl_c    &ctrl_v                      &kp LCTRL         &win_space                         &kp GRAVE      &ctrl_n      &ctrl_shift_pgdn  &ctrl_pgup  &ctrl_l               &ctrl_slash
+&kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
@@ -857,10 +857,10 @@
 
         SCROLL {
             bindings = <
-&kp Q       &kp W      &kp E         &kp R   &kp T                               &y_minus   &u_7  &i_8      &o_9       &kp P
-&kp A       &kp S      &kp D         &kp F   &kp G   &trans          &kp LANG1   &kp H      &j_4  &k_5      &l_6       &kp ENTER
-&kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &n_0       &m_1  &comma_2  &period_3  &slash
-&kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                             &kp QUESTION
+&kp Q       &kp W      &kp E         &kp R   &kp T                               &kp Y      &kp U  &kp I      &kp O       &kp P
+&kp A       &kp S      &kp D         &kp F   &kp G   &trans          &kp LANG1   &kp H      &kp J  &kp K      &kp L       &kp ENTER
+&kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &kp N      &kp M  &kp COMMA  &kp PERIOD  &slash
+&kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                                &kp QUESTION
             >;
         };
     };
