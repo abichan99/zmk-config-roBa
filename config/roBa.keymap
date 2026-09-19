@@ -835,7 +835,7 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &b_double_quote   &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp ASTERISK      &b_brace        &kp MINUS          &kp PLUS       &kp EQUAL
+&kp EXCLAMATION  &b_double_quote   &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp ASTERISK      &b_brace        &kp MINUS          &kp PLUS       &kp GRAVE
 &kp ASTERISK     &kp AT_SIGN       &kp PLUS   &kp EQUAL   &kp AMPERSAND  &trans      &trans  &kp SINGLE_QUOTE  &b_bracket      &kp COLON          &kp SEMICOLON  &none
 &kp LESS_THAN    &kp GREATER_THAN  &kp TILDE  &kp CARET   &kp PIPE       &trans      &trans  &kp COLON         &b_parenthasis  &kp RIGHT_BRACKET  &kp UNDER      &kp SLASH
 &trans           &trans            &trans     &trans      &trans         &trans      &trans  &kp BACKSPACE                                                       &trans
