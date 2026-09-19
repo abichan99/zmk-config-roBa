@@ -12,8 +12,6 @@
     automouse-layer = <4>;
     scroll-layers = <6>;
 
-    CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS=150
-
     // arrows {
     //     layers = <3>;
     //     bindings =
