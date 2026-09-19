@@ -810,7 +810,7 @@
 &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE       &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                                                    &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(MINUS) LC(PLUS)>;
         };
 
         FUNCTION {
@@ -839,7 +839,7 @@
 &trans           &trans            &trans     &trans      &trans         &trans      &trans  &kp BACKSPACE                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         MOUSE {
