@@ -867,6 +867,8 @@
 &kp Z       &kp X      &kp C         &kp V   &kp B   &win_space      &kp GRAVE   &kp N      &kp M  &kp COMMA  &kp PERIOD  &slash
 &kp LSHIFT  &kp LCTRL  &kp CAPSLOCK  &trans  &trans  &trans          &backspace  &kp SPACE                                &kp QUESTION
             >;
+
+            sensor-bindings = <&msc MOVE_Y(-20) &msc MOVE_Y(20)>;
         };
     };
 };
